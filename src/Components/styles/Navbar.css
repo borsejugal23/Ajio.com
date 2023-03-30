@@ -1,0 +1,73 @@
+#searchdiv{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    /* left:100px; */
+}
+#searchbar>input{
+    border-radius: 5px;
+    /* padding:0px;
+    margin:0px; */
+}
+#searchbar>button{
+    border-radius: 5px;
+}
+#searchbar{
+    display: flex;
+    column-gap: 3px;
+    align-self: flex-end;
+    padding-bottom: 5px;
+}
+.Navbar{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+    /* border:2px solid blue; */
+    position:relative;
+    width:100%;
+    /* height:75px; */
+    position:sticky;
+    top:0;
+    background-color: #fff; 
+     z-index: 100;
+    margin: auto;
+    /* margin-bottom: 5px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+/* .Navbar>div{
+    border:2px solid red;
+    
+} */
+.signindiv{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#category{
+    display:flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+#category>button{
+    border: none;
+    /* width:100%; */
+    height:30px;
+    font-size:15px;
+    margin:0px;
+    background-color: white;
+}
+.Navbar>div{
+    padding-top: 7px;
+}
+#logo{
+    width:40%;
+    /* border:2px solid red; */
+    padding:20px 0px 20px 20px;
+}
+#logo>img{
+    width:100%;
+    /* border:20px solid blue; */
+}
