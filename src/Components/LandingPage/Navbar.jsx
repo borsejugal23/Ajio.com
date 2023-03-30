@@ -1,43 +1,62 @@
 // import {Link} from "react-router-dom";
+import {BsCart2} from "react-icons/bs";
+import {BiBookmarkHeart} from "react-icons/bi"
+import "../styles/Navbar.css"
+import{Link} from "react-router-dom"
 
-// export default function Navbar(){
-// return <div>
-//     <Link to="/">Home</Link>
-//     <h1>Navbar</h1>
-// </div>
-// }
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-
-
-function Header() {
+export default function Navbar(){
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
-}
+    // main div
+    <>
+    <hr style={{padding:"0px",margin:"0px",border:"2px solid black",fontWeight:"20%"}}/>
+    <div className="Navbar">
+      
+      {/* 1st div for image */}
+      <div id="logo">
+        <Link to="/">
+           <img src="https://assets.ajio.com/static/img/Ajio-Logo.svg" alt="error" />
+        </Link>
+      </div>
+       {/* 2nd div for category */}
+      <div id="category">
+        <button>MEN</button>
+        <button>WOMEN</button>
+        <button>KIDS</button>
+        <button>INDIE</button>
+        <button>HOME AND KITCHEN</button>
+      </div>
 
-export default Header;
+
+       {/* 3rd div for search and login */}
+      <div>
+        {/* login div */}
+        <div className="signindiv" >
+          <div  id="Link_none">
+            <Link to = "signin" style={{textDecoration:"none"}}>Sign In</Link>
+            <span> / </span>
+            <Link to = "signup" style={{textDecoration:"none"}}>Sign Up</Link>
+          </div>
+          <span>Customer care</span>
+          <span>VISIT AJIOLUXE</span>
+        </div>
+        {/* search div */}
+        <div id="searchdiv" >
+
+          <div id="searchbar">
+            <input type="text" placeholder="Search AJIO"/>
+            <button>Search</button>
+          </div>
+
+          <div style={{fontSize:"30px"}}>
+          <BiBookmarkHeart/>
+          </div>
+          <div style={{fontSize:"30px"}}>
+
+          <BsCart2/>
+          </div>
+        </div>
+      </div>
+    </div>
+    </>
+  )
+}

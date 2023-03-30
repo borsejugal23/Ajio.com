@@ -1,0 +1,24 @@
+.showAllCard{
+    display:grid;
+    width:76%;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    border:2px solid green;
+}
+
+.AllContentHere{
+    display:flex;
+    margin-top: 30px;
+}
+#filter{
+    width:23%;
+}
+#shortData{
+    display:flex;
+    right:0;
+    
+    margin-left: 23%;
+    margin-top:30px;
+    border:2px solid red;
+    background-color: white;
+}
