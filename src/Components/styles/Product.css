@@ -3,22 +3,24 @@
     width:76%;
     grid-template-columns: repeat(3,1fr);
     gap:20px;
-    border:2px solid green;
+    
 }
 
 .AllContentHere{
     display:flex;
     margin-top: 30px;
+    justify-content: space-around;
 }
 #filter{
     width:23%;
+    position: sticky;
 }
 #shortData{
     display:flex;
     right:0;
-    
-    margin-left: 23%;
     margin-top:30px;
-    border:2px solid red;
+    padding:0px 10px;
     background-color: white;
+    align-items: center;
+    justify-content: space-between;
 }

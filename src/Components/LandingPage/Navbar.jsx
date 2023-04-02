@@ -19,11 +19,11 @@ export default function Navbar(){
       </div>
        {/* 2nd div for category */}
       <div id="category">
-        <button>MEN</button>
-        <button>WOMEN</button>
-        <button>KIDS</button>
-        <button>INDIE</button>
-        <button>HOME AND KITCHEN</button>
+        <button><Link to="/products" style={{textDecoration:"none",color:"black"}}>MEN</Link></button>
+        <button><Link to="/products" style={{textDecoration:"none",color:"black"}}>WOMEN</Link></button>
+        <button><Link to="/products" style={{textDecoration:"none",color:"black"}}>KIDS</Link></button>
+        <button><Link to="/products" style={{textDecoration:"none",color:"black"}}>INDIE</Link></button>
+        <button><Link to="/products" style={{textDecoration:"none",color:"black"}}>HOME AND KITCHEN</Link></button>
       </div>
 
 
