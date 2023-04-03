@@ -1,3 +1,9 @@
  #deevana{
     width:100%;
 }
+#changetheimg{
+    display: flex;
+    width:71%;
+   
+    justify-content: space-between;
+}

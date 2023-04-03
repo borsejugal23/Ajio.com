@@ -1720,11 +1720,26 @@
   ],
   "cart": [
     {
-      "id": "1",
-      "title": "IVOC",
-      "price": 671,
-      "image": "https://assets.ajio.com/medias/sys_master/root/20220819/Qm9w/62fe856aaeb269176183efe0/ivoc_black_slim_fit_shirt_with_patch_pocket.jpg",
-      "size": ""
+      "id": "93",
+      "title": "BESUCHER",
+      "description": "Saree with Contrast Border",
+      "price": 883,
+      "color": "Blue",
+      "gender": "female",
+      "category": "sarees",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20221221/0XUL/63a24629f997ddfdbde73ac1/besucher_blue_saree_with_contrast_border.jpg",
+      "size": "HS"
+    },
+    {
+      "id": "90",
+      "title": "GORGONE",
+      "description": "Printed Saree with Tassel Accent",
+      "price": 350,
+      "color": "Blue",
+      "gender": "female",
+      "category": "sarees",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20230122/bBXM/63cc4b8af997dd708e192c25/gorgone_turquoise_printed_saree_with_tassel_accent.jpg",
+      "size": "FS"
     }
   ],
   "admin": [],

@@ -5,18 +5,26 @@
     /* left:100px; */
 }
 #searchbar>input{
-    border-radius: 5px;
+    border-radius: 3px;
+    border:1px solid black;
     /* padding:0px;
     margin:0px; */
+    padding-left: 5px;
+   
 }
 #searchbar>button{
-    border-radius: 5px;
+    border-radius: 3px;
+    border:1px solid black;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 #searchbar{
     display: flex;
     column-gap: 3px;
     align-self: flex-end;
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
+    margin-top: 18px;
+    
 }
 .Navbar{
     display:grid;

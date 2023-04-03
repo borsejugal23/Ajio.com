@@ -40,12 +40,12 @@ const handleSelect = (e, id) => {
   });
 };
 
+const totalPrice = data.reduce((acc, item) => acc + item.price, 0);
 const Navigate_to_payment=()=>{
-  
+  localStorage.setItem('amount', totalPrice);
   
   navigate('/payment');
 } 
-const totalPrice = data.reduce((acc, item) => acc + item.price, 0);
 console.log(totalPrice)
 useEffect(()=>{
   receiveDatafromSinglePage()

@@ -1,7 +1,7 @@
 // import {Link} from "react-router-dom";
 import {BsCart2} from "react-icons/bs";
 import {BiBookmarkHeart} from "react-icons/bi"
-import "../styles/Navbar.css"
+import "../styles/Navbar 1.css"
 import{Link} from "react-router-dom"
 
 export default function Navbar(){
@@ -32,9 +32,9 @@ export default function Navbar(){
         {/* login div */}
         <div className="signindiv" >
           <div  id="Link_none">
-            <Link to = "signin" style={{textDecoration:"none"}}>Sign In</Link>
+            <Link to = "/signin" style={{textDecoration:"none"}}>Sign In</Link>
             <span> / </span>
-            <Link to = "signup" style={{textDecoration:"none"}}>Sign Up</Link>
+            <Link to = "/signup" style={{textDecoration:"none"}}>Sign Up</Link>
           </div>
           <span>Customer care</span>
           <span>VISIT AJIOLUXE</span>
@@ -52,7 +52,7 @@ export default function Navbar(){
           </div>
           <div style={{fontSize:"30px"}}>
 
-          <BsCart2/>
+          <Link to="/cart"><BsCart2/></Link>
           </div>
         </div>
       </div>

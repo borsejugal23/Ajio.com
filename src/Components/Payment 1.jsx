@@ -1,4 +1,6 @@
-import React from "react";
+import "./styles/Payment.css"
+import React, { useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import {
   Box,
   Flex,
@@ -8,10 +10,30 @@ import {
   Link,
   Button,
 } from "@chakra-ui/react";
+import Navbar from "./LandingPage/Navbar";
 
-const PaymentOrderComponent = () => {
+const PaymentPage = () => {
+  const navigate = useNavigate();
+  const [amount, setAmount] = useState(localStorage.getItem('amount'));
+
+  const handleChange=()=>{
+    navigate('/');
+  }
+
+  useEffect(() => {
+    const updateAmount = () => {
+      setAmount(localStorage.getItem('amount'));
+    };
+    window.addEventListener('storage', updateAmount);
+    return () => {
+      window.removeEventListener('storage', updateAmount);
+    };
+  }, []);
+
   return (
     <Box>
+        <Navbar/>
+        <br />
       <Box id="ten10_off">
         <Link href="">10% off a $50+ Buy Online, Pick Up In Store Order</Link>
       </Box>
@@ -83,21 +105,23 @@ const PaymentOrderComponent = () => {
             </Text>
             <Flex justifyContent="space-between" mt={2}>
               <Text>Subtotal</Text>
-              <Text id="sub_total">$</Text>
+              <Text id="sub_total">₹{amount}</Text>
             </Flex>
             <Flex justifyContent="space-between" mt={2}>
+             
+
               <Text>Shipping</Text>
-              <Text id="Shipping_cost">$</Text>
+              <Text id="Shipping_cost">₹0</Text>
             </Flex>
             <Flex justifyContent="space-between" mt={2}>
               <Text fontSize="lg" fontWeight="bold">
                 Order Total
               </Text>
               <Text fontSize="lg" fontWeight="bold" id="Order_total">
-                $
+              ₹ {amount}
               </Text>
             </Flex>
-            <Button mt={4} colorScheme="blue">
+            <Button mt={4} colorScheme="blue" onClick={handleChange}>
               Place order
             </Button>
           </Box>
@@ -107,4 +131,6 @@ const PaymentOrderComponent = () => {
   );
 };
 
-export default PaymentOrderComponent;
+export default PaymentPage;
+
+

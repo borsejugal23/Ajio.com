@@ -1,0 +1,26 @@
+.flexDiv{
+    display:flex;
+    margin-top: 70px;
+    justify-content: space-around;
+}
+img{
+    width:100%;
+}
+#cartBtn{
+    border:none;
+    width:70%;
+    padding:8px;
+    background-color: #FFB74D;
+    color:white;
+    border-radius: 5px;
+}
+
+#wishBtn{
+    border:2px solid #FFAB91;
+    width:70%;
+    padding:8px;
+    font-weight: bolder;
+    background-color: white;
+    color:#FFAB91;
+    border-radius: 5px;
+}

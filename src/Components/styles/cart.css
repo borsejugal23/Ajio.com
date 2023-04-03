@@ -1,0 +1,57 @@
+#parent{
+    display:flex;
+    margin:10px;
+    padding:10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   
+}
+#parent>div{
+    width:100%;
+
+}
+#parent>div>img{
+    width:60%;
+}
+#stepparent{
+    display:flex;
+    width:100%;
+}
+.container {
+    position: relative;
+   
+  }
+  
+  .bottom-btn {
+    position: absolute;
+    bottom: 0; 
+    margin-bottom: 20px;
+    left: 60%; 
+    transform: translateX(-50%); 
+  }
+  #TotalCost{
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+      width:27%;
+      height:300px;
+  }
+  
+  #Made_it_flex{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+  }
+  #checkoutbtn{
+    font-size: 17px;
+    font-weight: bold;
+    padding:10px 60px;
+    border-radius:5px;
+    color:white;
+    background-color: #Ffb900;
+  }
+
+
+
+
+
+
+   

@@ -93,7 +93,14 @@ function CarouselFadeExample() {
     </>
 }
 
-
+export const Mulitimg=()=>{
+  return <div id="changetheimg">
+  <img style={{width:"35%"}}src="https://assets.ajio.com/cms/AJIO/WEB/D-UHP-OnlineStores-P9-Sarees.jpg" alt="error" />
+  <img style={{width:"35%"}}src="https://assets.ajio.com/cms/AJIO/WEB/47.4_1.jpg" alt="error" />
+  <img style={{width:"35%"}}src="https://assets.ajio.com/cms/AJIO/WEB/D-UHP-OnlineStores-P7-Accessories.jpg" alt="error" />
+  <img style={{width:"35%"}}src="https://assets.ajio.com/cms/AJIO/WEB/47.4_1.jpg" alt="error" />
+</div>
+}
 
 
 
