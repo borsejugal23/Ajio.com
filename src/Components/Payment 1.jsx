@@ -1,4 +1,4 @@
-import "./styles/Payment.css"
+import "./styles/Payment.css";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import {
@@ -9,16 +9,37 @@ import {
   Checkbox,
   Link,
   Button,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  useDisclosure,
 } from "@chakra-ui/react";
 import Navbar from "./LandingPage/Navbar";
 
 const PaymentPage = () => {
   const navigate = useNavigate();
   const [amount, setAmount] = useState(localStorage.getItem('amount'));
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const handleChange=()=>{
+  const handleChange = () => {
+    // Simulating a successful payment
+    // Perform actual payment logic here
+    // ...
+
+    // Open the modal
+    onOpen();
+  };
+
+  const handleModalOk = () => {
+    // Close the modal
+    onClose();
+
+    // Redirect to the home page
     navigate('/');
-  }
+  };
 
   useEffect(() => {
     const updateAmount = () => {
@@ -32,8 +53,8 @@ const PaymentPage = () => {
 
   return (
     <Box>
-        <Navbar/>
-        <br />
+      <Navbar />
+      <br />
       <Box id="ten10_off">
         <Link href="">10% off a $50+ Buy Online, Pick Up In Store Order</Link>
       </Box>
@@ -52,9 +73,7 @@ const PaymentPage = () => {
               Change Country
             </Link>
             <Checkbox mt={2}>
-              <Text fontSize="sm">
-                My Billing address is same
-              </Text>
+              <Text fontSize="sm">My Billing address is same</Text>
             </Checkbox>
           </Box>
           <Box>
@@ -80,12 +99,7 @@ const PaymentPage = () => {
                 Credit Card
               </Text>
             </Checkbox>
-            <Input
-              placeholder="Card Number"
-              type="text"
-              mt={2}
-              mb={2}
-            />
+            <Input placeholder="Card Number" type="text" mt={2} mb={2} />
             <Flex>
               <Input placeholder="MM/YY" type="text" mr={2} />
               <Input placeholder="CVV" type="text" />
@@ -108,8 +122,6 @@ const PaymentPage = () => {
               <Text id="sub_total">₹{amount}</Text>
             </Flex>
             <Flex justifyContent="space-between" mt={2}>
-             
-
               <Text>Shipping</Text>
               <Text id="Shipping_cost">₹0</Text>
             </Flex>
@@ -118,12 +130,27 @@ const PaymentPage = () => {
                 Order Total
               </Text>
               <Text fontSize="lg" fontWeight="bold" id="Order_total">
-              ₹ {amount}
+                ₹ {amount}
               </Text>
             </Flex>
             <Button mt={4} colorScheme="blue" onClick={handleChange}>
               Place order
             </Button>
+
+            <Modal isOpen={isOpen} onClose={onClose}>
+              <ModalOverlay />
+              <ModalContent>
+                <ModalHeader>Payment Successfully Done</ModalHeader>
+                <ModalBody>
+                  <p>Your order has been successfully processed.</p>
+                </ModalBody>
+                <ModalFooter>
+                  <Button colorScheme="blue" onClick={handleModalOk}>
+                    OK
+                  </Button>
+                </ModalFooter>
+              </ModalContent>
+            </Modal>
           </Box>
         </Box>
       </Flex>
@@ -132,5 +159,3 @@ const PaymentPage = () => {
 };
 
 export default PaymentPage;
-
-

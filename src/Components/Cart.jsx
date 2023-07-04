@@ -13,7 +13,7 @@ export function Cart(){
   const [select,setSelect]=useState([])
 
 const receiveDatafromSinglePage=()=>{
-  return axios.get("http://localhost:8080/cart")
+  return axios.get("https://wvqmdk-8080.csb.app/cart")
   .then((res)=>{
     // console.log(res.data)
     setData(res.data)
@@ -22,7 +22,7 @@ const receiveDatafromSinglePage=()=>{
 
 const handleDelet=(e)=>{
 const {value}=e.target
-return axios.delete(`http://localhost:8080/cart/${value}`)
+return axios.delete(`https://wvqmdk-8080.csb.app/cart/${value}`)
 .then(()=>receiveDatafromSinglePage())
 
 }

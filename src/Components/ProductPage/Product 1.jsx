@@ -58,6 +58,8 @@ export const Allproduct=()=>{
     const [color,setcolor]=useState("")
     
     const [gender,setGender]=useState("")
+
+    // const[filterByheckbox,setfilterBycheckbox]=useState(false)
     console.log(category,gender,color)
 
     const fetchAllProducts=(paramsObj
@@ -90,6 +92,17 @@ useEffect(()=>{
 
 const {loading,data,err}=state
 
+// const handleCheckbox=(e)=>{
+// const {name,checked}=e.target;
+// if (name==="Green"){
+
+//     setfilterBycheckbox(checked)
+// }
+// // else{
+// //     setfilterBycheckbox(!checked)
+// // }
+
+// }
 
 return <>
 
@@ -148,10 +161,18 @@ return <>
                     <option value="Grey">Grey</option>
                     <option value="Black">Black</option>
                     <option value="Nevy">Nevy</option>
-                    <option value="Red">Red</option>
+                    <option value="Green">Green</option>
+                    
                 </select>
                 
             </div>
+{/* 
+            <p><input type="checkbox" name="Red" checked={filterByheckbox} onChange={
+                handleCheckbox}/>Red</p>
+            <p><input type="checkbox" name="Green" checked={filterByheckbox} onChange={
+                handleCheckbox}/>Green</p>
+            <p><input type="checkbox" name="Black" checked={filterByheckbox} onChange={
+                handleCheckbox}/>Black</p> */}
     </div>
     
     {loading?(<h1>loading...</h1>):err?(<h1>something went wrong</h1>):<div className="showAllCard">{data.map((e,i)=><Card key={e.id}{...e}  />)}</div>}

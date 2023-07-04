@@ -19,7 +19,7 @@ function handleSize(e){
 }
 
 const fechSingleproduct=(id)=>{
-return axios.get(`http://localhost:8080/products/${id}`)
+return axios.get(`https://wvqmdk-8080.csb.app/products/${id}`)
 .then((res)=>{
     setdata(res.data)
     
@@ -32,7 +32,7 @@ async function handlePostData(){
 
    
  try {
-   let res= await fetch("http://localhost:8080/cart",{
+   let res= await fetch("https://wvqmdk-8080.csb.app/cart",{
       method:"POST",
           headers:{
             'Content-Type' : 'application/json'
@@ -62,9 +62,9 @@ const {image,title,color,description,price,category}=data
 
     return <div>
        <Navbar/>
-          <div className="flexDiv">
+          {data?(<div className="flexDiv">
             <div>
-               <img src={image} alt="error" />
+               <img src={image} alt={title} />
             </div>
             <div>
                <p style={{color:"gold",fontWeight:"bolder"}}>{title}</p>
@@ -105,7 +105,7 @@ const {image,title,color,description,price,category}=data
                <br />
                <button id="wishBtn">SAVE TO WISHLIST</button>
             </div>
-          </div>
+          </div>):<h1>loading...</h1>}
        <div style={{marginTop:"50px"}}>
        <Footer/>
        </div>

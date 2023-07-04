@@ -18,6 +18,7 @@
     position:fixed;
     position:relative;
     
+    
 }
 #shortData{
     display:flex;
@@ -31,7 +32,8 @@
 }
 #filterDiv{
     color:black;
+    /* position: fixed; */
    
-    background-color: white;
+    /* background-color: white; */
     
 }
