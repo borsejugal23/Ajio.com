@@ -19,33 +19,21 @@
 
 
 # Landing page
-![Screenshot (131)](https://github.com/aniketghormare/guiltless-turkey-1550/assets/115496998/e1e3bd40-61b5-4aee-b4a3-206d3646d54b)
+![Ajio_one](https://github.com/borsejugal23/Ajio.com/assets/115457172/8694c3e7-1680-4f6f-a7c5-b92bf438c176)
 
 
-# Login section
-![image](https://github.com/aniketghormare/guiltless-turkey-1550/assets/115496998/bfbad01e-09e0-467b-99aa-40c02cdc9c9d)
+# Login Page
+![Ajio_five](https://github.com/borsejugal23/Ajio.com/assets/115457172/886d3a8a-a02d-4b1c-b15d-569672d3da76)
 
+# Product Page
+![Ajio_two](https://github.com/borsejugal23/Ajio.com/assets/115457172/f1c33506-47a8-49d3-8827-0a6c92abc4a8)
 
-# Games Section
-![image](https://github.com/aniketghormare/guiltless-turkey-1550/assets/115496998/2ec3d836-c32e-435e-92b2-263b00fab47a)
-![image](https://github.com/aniketghormare/guiltless-turkey-1550/assets/115496998/9ec8c537-1917-4659-9383-545e61084de4)
+# Single Page
+![Ajio_three](https://github.com/borsejugal23/Ajio.com/assets/115457172/d8d45d67-a5ba-490d-a28f-c222262bf8cf)
 
-
-# Movies Section
-![image](https://github.com/aniketghormare/guiltless-turkey-1550/assets/115496998/e4707806-be7d-47cd-a424-d79b65481f3c)
-
-
-# Cart Section
-![image](https://github.com/aniketghormare/guiltless-turkey-1550/assets/115496998/190c2e15-bfd0-4cb8-9c31-e0f36e983e4f)
-
-
-# Admin Login Section
-![image](https://github.com/aniketghormare/guiltless-turkey-1550/assets/115496998/3faedb8b-637b-40d4-b2bc-c290fcb4735b)
-
-
-# Admin Dashboard section
-![image](https://github.com/aniketghormare/guiltless-turkey-1550/assets/115496998/a2b0ec5b-2bf2-46bd-aa94-abbe99096d29)
-
+# Cart![Uploading Ajio_three.png…]()
+ Page
+![Ajio_four](https://github.com/borsejugal23/Ajio.com/assets/115457172/43956df6-e386-4afd-a54c-4a6f277bc94e)
 
 # Payment page
 ![image](https://github.com/aniketghormare/guiltless-turkey-1550/assets/115496998/706e29d6-6621-4ba2-bcad-bd18e1ba2262)
