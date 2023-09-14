@@ -31,8 +31,7 @@
 # Single Page
 ![Ajio_three](https://github.com/borsejugal23/Ajio.com/assets/115457172/d8d45d67-a5ba-490d-a28f-c222262bf8cf)
 
-# Cart![Uploading Ajio_three.png…]()
- Page
+# Cart Page
 ![Ajio_four](https://github.com/borsejugal23/Ajio.com/assets/115457172/43956df6-e386-4afd-a54c-4a6f277bc94e)
 
 # Payment page
