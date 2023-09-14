@@ -36,7 +36,5 @@
 ![Ajio_four](https://github.com/borsejugal23/Ajio.com/assets/115457172/43956df6-e386-4afd-a54c-4a6f277bc94e)
 
 # Payment page
-![image](https://github.com/aniketghormare/guiltless-turkey-1550/assets/115496998/706e29d6-6621-4ba2-bcad-bd18e1ba2262)
-
-
+![2023-09-14](https://github.com/borsejugal23/Ajio.com/assets/115457172/53a9e455-7e1c-454a-b63e-a56e0f92bc8d)
 
