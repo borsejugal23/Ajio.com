@@ -1,4 +1,4 @@
-# Gamezy.com
+# Ajio.com
 
 
 ## A project build by individual in 5 days.
