@@ -60,7 +60,7 @@ export const Allproduct=()=>{
     const [gender,setGender]=useState("")
 
     // const[filterByheckbox,setfilterBycheckbox]=useState(false)
-    console.log(category,gender,color)
+    // console.log(category,gender,color)
 
     const fetchAllProducts=(paramsObj
         )=>{
@@ -112,11 +112,11 @@ return <>
    <span style={{marginLeft:"100px"}}>FILTER BY</span>
         <span>{data.length} Items Found</span>
         <img style={{width:"15%"}}src={gridimg} alt="error" />
-        <span>SHORT BY {" "}
+        <span>SORT BY {" "}
          <select name="" value={order} onChange={(e)=>setOrder(e.target.value)}>
-            <option value="">Select</option>
-            <option value="asc">Low Price</option>
-            <option value="desc">High Price</option>
+            <option value="">Price</option>
+            <option value="asc">Low-High</option>
+            <option value="desc">High-Low</option>
             
         </select>
         </span>
@@ -175,7 +175,7 @@ return <>
                 handleCheckbox}/>Black</p> */}
     </div>
     
-    {loading?(<h1>loading...</h1>):err?(<h1>something went wrong</h1>):<div className="showAllCard">{data.map((e,i)=><Card key={e.id}{...e}  />)}</div>}
+    {loading?(<h1>Loading...</h1>):err?(<h1>something went wrong</h1>):<div className="showAllCard">{data.map((e,i)=><Card key={e.id}{...e}  />)}</div>}
 </div>
 <Footer/>
 </div>

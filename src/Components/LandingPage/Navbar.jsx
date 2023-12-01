@@ -23,7 +23,7 @@ export default function Navbar(){
         <button><Link to="/products" style={{textDecoration:"none",color:"black"}}>WOMEN</Link></button>
         <button><Link to="/products" style={{textDecoration:"none",color:"black"}}>KIDS</Link></button>
         <button><Link to="/products" style={{textDecoration:"none",color:"black"}}>INDIE</Link></button>
-        <button><Link to="/products" style={{textDecoration:"none",color:"black"}}>HOME AND KITCHEN</Link></button>
+        <button><Link to="/products" style={{textDecoration:"none",color:"black"}}> KITCHEN</Link></button>
       </div>
 
 

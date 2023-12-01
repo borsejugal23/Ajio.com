@@ -28,7 +28,7 @@ const Form1 = () => {
   return (
     <>
       <Heading w="100%" textAlign={'center'} fontWeight="normal" mb="2%">
-      Welcome to bigdeal
+      Welcome to ajio
       </Heading>
       <Flex>
         <FormControl mr="5%">
