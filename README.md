@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Ajio.com
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## A project build by individual in 5 days.
 
-In the project directory, you can run:
+   
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Pages and features
+- Home Page:- Navigation Bar, Footer,Login,Signup.
+- Product Page:- It has sorting & filtering functionality.
+- Cart Page :- Dyanamic cart
+- Payment Page
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h3 align="left">Languages and Tools:</h3>
+<p align="left" style=' width:"90%"; margin: auto; padding: 23px; display: flex; gap: 18px;'> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer">  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://chakra-ui.com/" target="_blank" rel="noreferrer"> <img src="https://image.pngaaa.com/704/7959704-middle.png" alt="react" width="50" height="40"/> </a> <a href="https://openbase.com/js/slick-slider/documentation" target="_blank" rel="noreferrer"> </a></p>
 
-### `npm test`
+## Some Glimpse of our Cloned Website
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# Landing page
+![Ajio_one](https://github.com/borsejugal23/Ajio.com/assets/115457172/8694c3e7-1680-4f6f-a7c5-b92bf438c176)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Login Page
+![Ajio_five](https://github.com/borsejugal23/Ajio.com/assets/115457172/886d3a8a-a02d-4b1c-b15d-569672d3da76)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Product Page
+![Ajio_two](https://github.com/borsejugal23/Ajio.com/assets/115457172/f1c33506-47a8-49d3-8827-0a6c92abc4a8)
 
-### `npm run eject`
+# Single Page
+![Ajio_three](https://github.com/borsejugal23/Ajio.com/assets/115457172/d8d45d67-a5ba-490d-a28f-c222262bf8cf)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Cart Page
+![Ajio_four](https://github.com/borsejugal23/Ajio.com/assets/115457172/43956df6-e386-4afd-a54c-4a6f277bc94e)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Payment page
+![2023-09-14](https://github.com/borsejugal23/Ajio.com/assets/115457172/53a9e455-7e1c-454a-b63e-a56e0f92bc8d)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
