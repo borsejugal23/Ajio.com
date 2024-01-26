@@ -13,7 +13,7 @@ export function Cart(){
   const [select,setSelect]=useState([])
 
 const receiveDatafromSinglePage=()=>{
-  return axios.get("https://wvqmdk-8080.csb.app/cart")
+  return axios.get("https://json-mock-cp-bp2n.onrender.com/cart")
   .then((res)=>{
     // console.log(res.data)
     setData(res.data)
@@ -22,7 +22,7 @@ const receiveDatafromSinglePage=()=>{
 
 const handleDelet=(e)=>{
 const {value}=e.target
-return axios.delete(`https://wvqmdk-8080.csb.app/cart/${value}`)
+return axios.delete(`https://json-mock-cp-bp2n.onrender.com/cart/${value}`)
 .then(()=>receiveDatafromSinglePage())
 
 }

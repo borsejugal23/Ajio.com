@@ -1,113 +1,249 @@
-import React, { useEffect, useState  } from "react"
-import { useParams } from "react-router-dom"
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import axios from "axios";
 import Navbar from "../LandingPage/Navbar";
 import { Footer } from "../LandingPage/Footer";
-import "../styles/Singlepage 1.css"
-import Offerimg from "../Pictures/Screenshot 2023-04-01 165143.png"
+import "../styles/Singlepage 1.css";
+import Offerimg from "../Pictures/Screenshot 2023-04-01 165143.png";
 // import { BsBagCheck } from 'react-icons/bs';
-import Button from 'react-bootstrap/Button';
+import Button from "react-bootstrap/Button";
 
+export const SinglePage = () => {
+  const { id } = useParams();
+  const [data, setdata] = useState([]);
+  const [size, setSize] = useState("");
 
-export const SinglePage=()=>{
-const {id}=useParams();
-const [data,setdata]=useState([])
-const [size, setSize]= useState("")
+  function handleSize(e) {
+    setSize(e.target.value);
+  }
 
-function handleSize(e){
-   setSize(e.target.value)
-}
+  const fechSingleproduct = (id) => {
+    return axios
+      .get(`https://json-mock-cp-bp2n.onrender.com/products/${id}`)
+      .then((res) => {
+        setdata(res.data);
+      });
+  };
 
-const fechSingleproduct=(id)=>{
-return axios.get(`https://wvqmdk-8080.csb.app/products/${id}`)
-.then((res)=>{
-    setdata(res.data)
-    
-})
-}
-
-
-async function handlePostData(){
-   if (size){
-
-   
- try {
-   let res= await fetch("https://wvqmdk-8080.csb.app/cart",{
-      method:"POST",
-          headers:{
-            'Content-Type' : 'application/json'
+  async function handlePostData() {
+    if (size) {
+      try {
+        let res = await fetch("https://json-mock-cp-bp2n.onrender.com/cart", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
           },
-          body:JSON.stringify({...data, size:size})
-   });
-   // if (res.ok){
-   //    setSize("")
-   // }
-   alert("Product Added Successfuly")
-   console.log(res)
- } catch (error) {
-   console.log(error)
- }
-}
-else{
-   alert("Select The Size First")
-}
- 
-}
-useEffect(()=>{
-   fechSingleproduct(id)
-   
-},[id])
+          body: JSON.stringify({ ...data, size: size }),
+        });
+        // if (res.ok){
+        //    setSize("")
+        // }
+        alert("Product Added Successfuly");
+        console.log(res);
+      } catch (error) {
+        console.log(error);
+      }
+    } else {
+      alert("Select The Size First");
+    }
+  }
+  useEffect(() => {
+    fechSingleproduct(id);
+  }, [id]);
 
-const {image,title,color,description,price,category}=data
+  const { image, title, color, description, price, category } = data;
 
-    return <div>
-       <Navbar/>
-          {data?(<div className="flexDiv">
+  return (
+    <div>
+      <Navbar />
+      {data ? (
+        <div className="flexDiv">
+          <div>
+            <img src={image} alt={title} />
+          </div>
+          <div>
+            <p style={{ color: "gold", fontWeight: "bolder" }}>{title}</p>
+            <p>{description}</p>
+            <br />
+            <span style={{ color: "green" }}>MRP ₹{price}</span>
+            <p>Price inclusive of all taxes</p>
+            <img
+              style={{ width: "70%", marginLeft: "10%" }}
+              src={Offerimg}
+              alt="error"
+            />
+            <br />
+            <p>{color}</p>
+            <div
+              style={{
+                width: "7%",
+                height: "5%",
+                margin: "auto",
+                borderRadius: "50%",
+                backgroundColor: `${color}`,
+              }}
+            ></div>
+            <p>Size</p>
+
             <div>
-               <img src={image} alt={title} />
+              <Button
+                onClick={handleSize}
+                value={`${
+                  category === "jeans"
+                    ? "28"
+                    : category === "shirt"
+                    ? "S"
+                    : category === "kurtas"
+                    ? "S"
+                    : category === "sarees"
+                    ? "S"
+                    : category === "shoes"
+                    ? "6"
+                    : category === "sandals"
+                    ? "5"
+                    : ""
+                }`}
+                variant="outline-info"
+              >
+                {`${
+                  category === "jeans"
+                    ? "28"
+                    : category === "shirt"
+                    ? "S"
+                    : category === "kurtas"
+                    ? "S"
+                    : category === "sarees"
+                    ? "S"
+                    : category === "shoes"
+                    ? "6"
+                    : category === "sandals"
+                    ? "5"
+                    : ""
+                }`}
+              </Button>{" "}
+              <Button
+                onClick={handleSize}
+                value={`${
+                  category === "jeans"
+                    ? "30"
+                    : category === "shirt"
+                    ? "M"
+                    : category === "kurtas"
+                    ? "M"
+                    : category === "sarees"
+                    ? "FS"
+                    : category === "shoes"
+                    ? "7"
+                    : category === "sandals"
+                    ? "6"
+                    : ""
+                }`}
+                variant="outline-info"
+              >
+                {`${
+                  category === "jeans"
+                    ? "30"
+                    : category === "shirt"
+                    ? "M"
+                    : category === "kurtas"
+                    ? "M"
+                    : category === "sarees"
+                    ? "FS"
+                    : category === "shoes"
+                    ? "7"
+                    : category === "sandals"
+                    ? "6"
+                    : ""
+                }`}
+              </Button>{" "}
+              <Button
+                onClick={handleSize}
+                value={`${
+                  category === "jeans"
+                    ? "32"
+                    : category === "shirt"
+                    ? "L"
+                    : category === "kurtas"
+                    ? "L"
+                    : category === "sarees"
+                    ? "HS"
+                    : category === "shoes"
+                    ? "8"
+                    : category === "sandals"
+                    ? "7"
+                    : ""
+                }`}
+                variant="outline-info"
+              >
+                {`${
+                  category === "jeans"
+                    ? "32"
+                    : category === "shirt"
+                    ? "L"
+                    : category === "kurtas"
+                    ? "L"
+                    : category === "sarees"
+                    ? "HS"
+                    : category === "shoes"
+                    ? "8"
+                    : category === "sandals"
+                    ? "7"
+                    : ""
+                }`}
+              </Button>{" "}
+              <Button
+                onClick={handleSize}
+                value={`${
+                  category === "jeans"
+                    ? "34"
+                    : category === "shirt"
+                    ? "Xl"
+                    : category === "kurtas"
+                    ? "XL"
+                    : category === "sarees"
+                    ? "WS"
+                    : category === "shoes"
+                    ? "9"
+                    : category === "sandals"
+                    ? "8"
+                    : ""
+                }`}
+                variant="outline-info"
+              >
+                {`${
+                  category === "jeans"
+                    ? "34"
+                    : category === "shirt"
+                    ? "Xl"
+                    : category === "kurtas"
+                    ? "XL"
+                    : category === "sarees"
+                    ? "WS"
+                    : category === "shoes"
+                    ? "9"
+                    : category === "sandals"
+                    ? "8"
+                    : ""
+                }`}
+              </Button>{" "}
             </div>
-            <div>
-               <p style={{color:"gold",fontWeight:"bolder"}}>{title}</p>
-               <p>{description}</p>
-               <br />
-               <span style={{color:"green"}}>MRP ₹{price}</span>
-               <p>Price inclusive of all taxes</p>
-               <img style={{width:"70%",marginLeft:"10%"}}src={Offerimg} alt="error" />
-               <br />
-               <p>{color}</p>
-               <div style={{width:"7%",height:"5%",margin:"auto",borderRadius:"50%",backgroundColor:`${color}`}}></div>
-               <p>Size</p>
-
-               <div>
-                  
-                     <Button onClick={handleSize} value= {`${category==="jeans"?"28":category==="shirt"?"S":category==="kurtas"?"S": category==="sarees"?"S":category==="shoes"?"6":category==="sandals"?"5":""}`} variant="outline-info"> 
-                           {`${category==="jeans"?"28":category==="shirt"?"S":category==="kurtas"?"S": category==="sarees"?"S":category==="shoes"?"6":category==="sandals"?"5":""}`}
-                     </Button>{' '}
-
-                     <Button onClick={handleSize} value= {`${category==="jeans"?"30":category==="shirt"?"M":category==="kurtas"?"M":category==="sarees"?"FS":category==="shoes"?"7":category==="sandals"?"6":""}`} variant="outline-info">
-                           {`${category==="jeans"?"30":category==="shirt"?"M":category==="kurtas"?"M":category==="sarees"?"FS":category==="shoes"?"7":category==="sandals"?"6":""}`}
-                        </Button>{' '}
-
-                     <Button onClick={handleSize} value={`${category==="jeans"?"32":category==="shirt"?"L":category==="kurtas"?"L":category==="sarees"?"HS":category==="shoes"?"8":category==="sandals"?"7":""}`} variant="outline-info">
-                           {`${category==="jeans"?"32":category==="shirt"?"L":category==="kurtas"?"L":category==="sarees"?"HS":category==="shoes"?"8":category==="sandals"?"7":""}`}
-                     </Button>{' '}
-
-                     <Button onClick={handleSize} value={`${category==="jeans"?"34":category==="shirt"?"Xl":category==="kurtas"?"XL":category==="sarees"?"WS":category==="shoes"?"9":category==="sandals"?"8":""}`} variant="outline-info"> 
-                           {`${category==="jeans"?"34":category==="shirt"?"Xl":category==="kurtas"?"XL":category==="sarees"?"WS":category==="shoes"?"9":category==="sandals"?"8":""}`}
-                     </Button>{' '}
-
-               </div>
-               <br />
-               <br />
-               <button id="cartBtn" onClick={handlePostData}>ADD TO BAG</button>
-               <br />
-               <br />
-               <br />
-               <button id="wishBtn">SAVE TO WISHLIST</button>
-            </div>
-          </div>):<h1>loading...</h1>}
-       <div style={{marginTop:"50px"}}>
-       <Footer/>
-       </div>
+            <br />
+            <br />
+            <button id="cartBtn" onClick={handlePostData}>
+              ADD TO BAG
+            </button>
+            <br />
+            <br />
+            <br />
+            <button id="wishBtn">SAVE TO WISHLIST</button>
+          </div>
+        </div>
+      ) : (
+        <h1>loading...</h1>
+      )}
+      <div style={{ marginTop: "50px" }}>
+        <Footer />
+      </div>
     </div>
-}
+  );
+};
